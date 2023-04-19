@@ -1,83 +1,45 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link href="apple-touch-icon.html" rel="apple-touch-icon">
+        <link href="favicon.html" rel="icon">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title>Aquila Allied Impex</title>
+        {{-- Fonts --}}
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/fonts/Linearicons/Font/demo-files/demo.css">
+        {{-- Assests --}}
+        <link rel="stylesheet" href="/assets/plugins/nouiSlider/css/nouislider.css">
+        <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+        <link rel="stylesheet" href="/assets/plugins/select2/dist/css/select2.min.css">
+        <link rel="stylesheet" href="/assets/plugins/owl-carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/assets/plugins/slick/slick.css">
+        <link rel="stylesheet" href="/assets/plugins/lightGallery/dist/css/lightgallery.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <body>
+        @include('partials.header')
+        @yield('main')
+        @include('partials.footer')
+        @include('partials.mobile-footer')
+        @include('partials.mobile-category')
+        @include('partials.mobile-nav')
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+        <button class="btn scroll-top"><i class="icon-chevron-up"></i></button>
+        <div class="ps-preloader" id="preloader">
+            <div class="ps-preloader-section ps-preloader-left"></div>
+            <div class="ps-preloader-section ps-preloader-right"></div>
+        </div>
+    </body>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
-</body>
 </html>
