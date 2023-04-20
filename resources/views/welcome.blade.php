@@ -8,7 +8,7 @@
                     <div class="ps-content">
                         <div class="container">
                             <div class="ps-content-box">
-                                <div class="ps-title">Farmart Organic Fruit & Vegetable Delivery <br/> <span class='text-danger'>Daily Offers.</span></div>
+                                <div class="ps-title">AquilaImpex Organic Fruit & Vegetable Delivery <br/> <span class='text-danger'>Daily Offers.</span></div>
                                 <div class="ps-subtitle">With our deverse range of <span class='text-success'>100% fresh</span> foods.</div>
                                 <div class="ps-shopnow"> <a href="shop-view-grid.html">Shop Now<i class="icon-chevron-right"></i></a></div>
                             </div>
@@ -44,7 +44,7 @@
                 <div class="container">
                     <div class="row m-0">
                         <div class="col-4">
-                            <p><b>Offers: Farmart Organic Fruit & Vegies</b></p>
+                            <p><b>Offers: AquilaImpex Organic Fruit & Vegies</b></p>
                         </div>
                         <div class="col-4">
                             <p>Whole Earth Organic Sparkling Lemonade</p>
@@ -200,14 +200,14 @@
         <section class="section-flashdeal--default ps-home--block">
             <div class="container">
                 <div class="ps-block__header">
-                    <h3 class="ps-block__title"><i class="icon-power"></i>Flash Deals<span class="ps-countdown"><span class="ps-countdown-end">Ends in : </span><span class="ps-countdown"><b class="hours">00</b> hours : <b class="minutes">12</b> mins : <b class="seconds">45</b> secs</span><span class="ps-countdown mobile"><b class="hours">00</b> h : <b class="minutes">12</b> m : <b class="seconds">45</b> s</span></span></h3><a class="ps-block__view" href="flash-sale.html">View all<i class="icon-chevron-right"></i></a>
+                    <h3 class="ps-block__title"><i class="icon-power"></i>Flash Deals <span class="ps-countdown"><span class="ps-countdown-end">Ends in: &nbsp;</span><span class="ps-countdown"><b class="hours">00</b> hours : <b class="minutes">12</b> mins : <b class="seconds">45</b> secs</span><span class="ps-countdown mobile"><b class="hours">00</b> h : <b class="minutes">12</b> m : <b class="seconds">45</b> s</span></span></h3><a class="ps-block__view" href="flash-sale.html">View all<i class="icon-chevron-right"></i></a>
                 </div>
                 <div class="flashdeal--content">
                     <div class="owl-carousel" data-owl-auto="false" data-owl-loop="false" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="6" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="6" data-owl-duration="1000" data-owl-mousedrag="on">
                         <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$2.90</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">25% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
                                     <h5 class="ps-product__name">Cornboat Holders</h5>
                                 </a>
                                 <p class="ps-product__unit">4 per pack</p>
@@ -372,7 +372,7 @@
                         <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_11a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$3.39</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
                                     <h5 class="ps-product__name">Arla Organic Free Range Milk</h5>
                                 </a>
                                 <p class="ps-product__unit">1 per pack</p>
@@ -481,7 +481,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Corn, Yellow Sweet</a></h5>
                                             <p class="ps-product__unit">4 per pack</p>
                                             <div class="ps-product__rating">
@@ -636,7 +636,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_17a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Tomato Nature Sweet Glor</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
@@ -698,7 +698,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Pork Steak Jumbo Pack</a></h5>
                                             <p class="ps-product__unit">1kg</p>
                                             <div class="ps-product__rating">
@@ -765,7 +765,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Assorted Donuts Each</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
@@ -920,7 +920,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Natures Own 100% Wheat</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
@@ -982,7 +982,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">50% Off </span>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Ball Park Hot Dog Buns</a></h5>
                                             <p class="ps-product__unit">90lbs</p>
                                             <div class="ps-product__rating">
@@ -1050,7 +1050,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Fried Chicken Tenders</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -1205,7 +1205,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_6a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Tailgater Ham Sandwich Pack</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -1267,7 +1267,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_9a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Kret Ham Off The Bone</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -1333,7 +1333,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Apple Rasp Juice</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
@@ -1488,7 +1488,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Always Save Frozen Lemonade</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
@@ -1550,7 +1550,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Kevita Pineapple Peach</a></h5>
                                             <p class="ps-product__unit">330ml</p>
                                             <div class="ps-product__rating">
@@ -1616,7 +1616,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Cornboat Holders</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -1771,7 +1771,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_10a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Arla Organic Free Range Milk</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -1833,7 +1833,7 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_13a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
-                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
                                             <h5><a class="ps-product__name" href="product-default.html">Pork Steak Jumbo Pack</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
@@ -2084,7 +2084,7 @@
                                     <div class="cart-item">
                                         <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_35a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
                                                     <h5 class="ps-product__name">Extreme Budweiser Light Can</h5>
                                                 </a>
                                                 <p class="ps-product__unit">500g</p>
@@ -2147,7 +2147,7 @@
                                     <div class="cart-item">
                                         <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_15a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
                                                     <h5 class="ps-product__name">Avocado, Hass Large</h5>
                                                 </a>
                                                 <p class="ps-product__unit">300g</p>

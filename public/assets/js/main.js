@@ -1,5 +1,5 @@
 /*
-    Project: Farmart HTML Template
+    Project: AquilaImpex HTML Template
     Version: 1.0.0
     Developed by: warethemes
 */
@@ -247,12 +247,12 @@
         $('.navbar-toggler').on('click', function(e) {
             $('.navigation--mobile').toggleClass('open');
         });
-        
+
         $('.close-navbar-slide').on('click', function(e) {
             $('.navigation--mobile').removeClass('open');
         });
     }
-    
+
     function currencyGetValue() {
         $('.currency-item').on('click', function(e) {
             $('.currency-item').removeClass('active');
@@ -371,7 +371,7 @@
             $('html,body').animate({ scrollTop: 0 }, 500);
         });
 
-        $('.floating-item').on('click', function(event){     
+        $('.floating-item').on('click', function(event){
             event.preventDefault();
             $('.floating-item').removeClass('active');
             $(this).addClass('active');
@@ -470,7 +470,7 @@
             var step = $(this).attr('data-step');
             var noStep = $(this).attr('data-no-step');
             $('.nav-tabs li').removeClass('active');
-            
+
             if (noStep) {
                 $('.nav-tabs .step-' + step).addClass('active');
             } else {
@@ -478,7 +478,7 @@
                     $('.nav-tabs .step-' + index).addClass('active');
                 }
             }
-            
+
 
             if(step <= 2) {
                 $('.steps__action').scrollLeft(0);
@@ -496,7 +496,7 @@
                 nextTab(item);
             }
         });
-        
+
         $(".prev-step").on('click', function (e) {
             var active = $('.nav-tabs li.active:last');
             if (active.prev().length) {
@@ -700,7 +700,7 @@
 
         function updateClock() {
             var t = getTimeRemaining(endtime);
-            
+
             var hoursText = ('0' + t.hours).slice(-2);
             var minutesText = ('0' + t.minutes).slice(-2);
             var secondsText = ('0' + t.seconds).slice(-2);

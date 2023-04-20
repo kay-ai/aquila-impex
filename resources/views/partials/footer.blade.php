@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="service__payment"><img src="img/promotion/payment_paypal.jpg" alt><img src="img/promotion/payment_visa.jpg" alt><img src="img/promotion/payment_mastercart.jpg" alt><img src="img/promotion/payment_electron.jpg" alt><img src="img/promotion/payment_skrill.jpg" alt></div>
-                    <p class="service__app">Get Farmart App to <span class="text-success">get $15 coupon</span></p>
+                    <p class="service__app">Get AquilaImpex App to <span class="text-success">get $15 coupon</span></p>
                     <div class="service__download"><a href="contact.html"><img src="img/promotion/appStore.jpg" alt></a><a href="contact.html"><img src="img/promotion/googlePlay.jpg" alt></a></div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -156,7 +156,7 @@
             </div>
         </div>
         <div class="row ps-footer__copyright">
-            <div class="col-12 col-lg-6 ps-footer__text">&copy; 2020 Farmart Marhetplace. All Rights Reversed.</div>
+            <div class="col-12 col-lg-6 ps-footer__text">&copy; 2020 AquilaImpex Marhetplace. All Rights Reversed.</div>
             <div class="col-12 col-lg-6 ps-footer__social"> <a class="icon_social facebook" href="#"><i class="fa fa-facebook-f"></i></a><a class="icon_social twitter" href="#"><i class="fa fa-twitter"></i></a><a class="icon_social google" href="#"><i class="fa fa-google-plus"></i></a><a class="icon_social youtube" href="#"><i class="fa fa-youtube"></i></a><a class="icon_social wifi" href="#"><i class="fa fa-wifi"></i></a></div>
         </div>
     </div>
