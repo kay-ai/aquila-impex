@@ -23,7 +23,7 @@
         <div class="navigation-title">
             <button class="close-navbar-slide"><i class="icon-arrow-left"></i></button>
             <div><span> <i class="icon-user"></i>Hi, </span><span class="account">Morgan Averill</span><a class="dropdown-user" href="#" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-chevron-down"></i></a>
-                <div class="dropdown-menu" aria-labelledby="dropdownAccount"><a class="dropdown-item" href="#"><b>My Account</b></a><a class="dropdown-item" href="#">Dashboard</a><a class="dropdown-item" href="#">Account Setting</a><a class="dropdown-item" href="shopping-cart.html">Orders</a><a class="dropdown-item" href="wishlist.html">Wishlist</a><a class="dropdown-item" href="#">Shipping Address</a><a class="dropdown-divider"></a><a class="dropdown-item" href="#"><b>Vendor Setting</b></a><a class="dropdown-item" href="#">Dashboard</a><a class="dropdown-item" href="#">Products</a><a class="dropdown-item" href="shopping-cart.html">Orders</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="vendor-store.html">View Store</a><a class="dropdown-divider"></a><a class="dropdown-item" href="#"><i class="icon-exit-left"></i>Log out</a></div>
+                <div class="dropdown-menu" aria-labelledby="dropdownAccount"><a class="dropdown-item" href="#"><b>My Account</b></a><a class="dropdown-item" href="#">Dashboard</a><a class="dropdown-item" href="#">Account Setting</a><a class="dropdown-item" href="{{route('shop-cart')}}">Orders</a><a class="dropdown-item" href="wishlist.html">Wishlist</a><a class="dropdown-item" href="#">Shipping Address</a><a class="dropdown-divider"></a><a class="dropdown-item" href="#"><b>Vendor Setting</b></a><a class="dropdown-item" href="#">Dashboard</a><a class="dropdown-item" href="#">Products</a><a class="dropdown-item" href="{{route('shop-cart')}}">Orders</a><a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="vendor-store.html">View Store</a><a class="dropdown-divider"></a><a class="dropdown-item" href="#"><i class="icon-exit-left"></i>Log out</a></div>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <ul class="menu--mobile">
             <li class="menu-item-has-children"><a href="#">Home</a><span class="sub-toggle"><i class="icon-chevron-down"></i></span>
                 <ul class="sub-menu">
-                    <li><a href="index.html">Home Supermarket</a></li>
+                    <li><a href="{{route('welcome')}}">Home Supermarket</a></li>
                     <li><a href="home-full-width.html">Home Supermarket Full Width</a></li>
                     <li><a href="home-local-store.html">Home Local Store</a></li>
                     <li><a href="home-sidebar.html">Home Sidebar</a></li>
@@ -40,10 +40,10 @@
             </li>
             <li class="menu-item-has-children"><a href="#">Shop</a><span class="sub-toggle"><i class="icon-chevron-down"></i></span>
                 <ul class="sub-menu">
-                    <li><a href="shop-view-grid.html">Shop Default View Grid</a></li>
+                    <li><a href="{{route('shop')}}">Shop Default View Grid</a></li>
                     <li><a href="shop-view-listing.html">Shop Default View Listing</a></li>
                     <li><a href="shop-view-extended.html">Shop Default View Products</a></li>
-                    <li><a href="shop-categories.html">Shop Categories</a></li>
+                    <li><a href="{{route('shop-categories')}}">Shop Categories</a></li>
                     <li><a href="shop-with-banner.html">Shop With Banner</a></li>
                     <li><a href="shop-all-brands.html">Shop All Brands</a></li>
                 </ul>
@@ -64,15 +64,15 @@
             </li>
             <li class="menu-item-has-children"><a href="#">Blog</a><span class="sub-toggle"><i class="icon-chevron-down"></i></span>
                 <ul class="sub-menu">
-                    <li><a href="blog-default.html">01 Blog-Default</a></li>
+                    <li><a href="{{route('blog')}}">01 Blog-Default</a></li>
                     <li><a href="blog-thumbnail.html">Blog Small Thumbnail</a></li>
                     <li><a href="blog-gird.html">Blog Gird</a></li>
                     <li><a href="blog-list.html">Blog Listing</a></li>
-                    <li><a href="single-post.html">Single Post without Sidebar</a></li>
+                    <li><a href="{{route('blog-single')}}">Single Post without Sidebar</a></li>
                     <li><a href="single-post-sidebar.html">Single Post with Sidebar</a></li>
                 </ul>
             </li>
-            <li class="menu-item-has-children"><a href="product-default.html">Brand</a></li>
+            <li class="menu-item-has-children"><a href="{{route('product-view')}}">Brand</a></li>
             <li class="menu-item-has-children"><a href="flash-sale.html">Flash Sale</a></li>
         </ul>
         <ul class="menu--mobile">

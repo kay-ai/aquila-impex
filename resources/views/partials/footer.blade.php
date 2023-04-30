@@ -7,7 +7,7 @@
                     <p><b><i class="icon-telephone"> </i>Hotline: </b><span>(7:00 - 21:30)</span></p>
                     <p class="telephone">097 978-6290<br>097 343-8888</p>
                     <p> <b>Head office: </b>8049 High Ridge St. Saint Joseph, MI 49085</p>
-                    <p> <b>Email us: </b><a href="http://nouthemes.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="becdcbceced1cccafed8dfccd3dfccca90ddd1d3">[email&#160;protected]</a></p>
+                    <p> <b>Email us: </b> support@aquilaimpex.com</p>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="row">
@@ -85,73 +85,73 @@
         <div class="ps-footer--categories">
             <div class="categories__list"><b>Fresh: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Meat & Poultry</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Fruit</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Vegetables</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Salad & Herbs</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Yoghurts</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Milk, Butter & Eggs</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Ham, Deli & Dips</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Cheese</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Fish</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Pizza & Garlic Bread</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Meat & Poultry</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Fruit</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Vegetables</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Salad & Herbs</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Yoghurts</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Milk, Butter & Eggs</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Ham, Deli & Dips</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Cheese</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Fish</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Pizza & Garlic Bread</a></li>
                 </ul>
             </div>
             <div class="categories__list"><b>Food Cupboard: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Crisps, Snacks & Nuts</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Breakfast Cereals</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Tins & Cans</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Chocolate & Sweets</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Biscuits</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Rice, Pasta & Pulses</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Cooking Ingredients</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Crisps, Snacks & Nuts</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Breakfast Cereals</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Tins & Cans</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Chocolate & Sweets</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Biscuits</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Rice, Pasta & Pulses</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Cooking Ingredients</a></li>
                 </ul>
             </div>
             <div class="categories__list"><b>Bakery: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Bread</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Rolls, Bagels & Thins</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Cakes & Treats</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Wraps, Pitta & Naan Bread</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Crumpets, Muffins & Pancakes</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Croissants & Brioche</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Bread</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Rolls, Bagels & Thins</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Cakes & Treats</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Wraps, Pitta & Naan Bread</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Crumpets, Muffins & Pancakes</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Croissants & Brioche</a></li>
                 </ul>
             </div>
             <div class="categories__list"><b>Frozen Foods: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Ice Cream</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Fruit, Vegetables & Herbs</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Chips, Potatoes & Rice</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Fish</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Vegetarian</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Meat & Poultry</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Ready Meals & Party Food</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Ice Cream</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Fruit, Vegetables & Herbs</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Chips, Potatoes & Rice</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Fish</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Vegetarian</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Meat & Poultry</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Ready Meals & Party Food</a></li>
                 </ul>
             </div>
             <div class="categories__list"><b>Ready Meals: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Meals for 1</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Indian</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Italian</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Chinese</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Traditional British</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Thai & Oriental</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Mediterranean & Moroccan</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Mexican & Caribbean</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Kids' Meals</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Meals for 1</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Indian</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Italian</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Chinese</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Traditional British</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Thai & Oriental</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Mediterranean & Moroccan</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Mexican & Caribbean</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Kids' Meals</a></li>
                 </ul>
             </div>
             <div class="categories__list"><b>Soft Drinks, Tea & Coffee: </b>
                 <ul class="menu--vertical">
-                    <li class="menu-item"><a href="shop-categories.html">Fizzy Drinks</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Water</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Tea, Coffee & Hot Drinks</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Squash</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Juices</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Mixers</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Diet & No Added Sugar</a></li>
-                    <li class="menu-item"><a href="shop-categories.html">Still & Sparkling</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Fizzy Drinks</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Water</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Tea, Coffee & Hot Drinks</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Squash</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Juices</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Mixers</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Diet & No Added Sugar</a></li>
+                    <li class="menu-item"><a href="{{route('shop-categories')}}">Still & Sparkling</a></li>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', [$activePage = 'Home'])
 
 @section('main')
     <main class="no-main">
@@ -10,7 +10,7 @@
                             <div class="ps-content-box">
                                 <div class="ps-title">AquilaImpex Organic Fruit & Vegetable Delivery <br/> <span class='text-danger'>Daily Offers.</span></div>
                                 <div class="ps-subtitle">With our deverse range of <span class='text-success'>100% fresh</span> foods.</div>
-                                <div class="ps-shopnow"> <a href="shop-view-grid.html">Shop Now<i class="icon-chevron-right"></i></a></div>
+                                <div class="ps-shopnow"> <a href="{{route('shop')}}">Shop Now<i class="icon-chevron-right"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                                 <div class="ps-node"><span class='text-success'>NEW ARRIVALS</span></div>
                                 <div class="ps-title">Whole Earth Organic Sparkling Lemonade.</div>
                                 <div class="ps-subtitle">Made with nuatural ingredients</div>
-                                <div class="ps-shopnow"> <a href="shop-view-grid.html">Shop Now<i class="icon-chevron-right"></i></a></div>
+                                <div class="ps-shopnow"> <a href="{{route('shop')}}">Shop Now<i class="icon-chevron-right"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                                 <div class="ps-node"><span class='text-danger'>SALE UP TO 30%</span></div>
                                 <div class="ps-title">Whole Earth Maple Frosted Organic Corn Flakes.</div>
                                 <div class="ps-subtitle">Only from <br/> <span class='price'>$5.99</span></div>
-                                <div class="ps-shopnow"> <a href="shop-view-grid.html">Shop Now<i class="icon-chevron-right"></i></a></div>
+                                <div class="ps-shopnow"> <a href="{{route('shop')}}">Shop Now<i class="icon-chevron-right"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -59,22 +59,22 @@
         <div class="ps-promotion--default">
             <div class="container">
                 <div class="row m-0">
-                    <div class="col-6 col-lg-3"><a href="shop-view-grid.html"><img src="/assets/img/promotion/promotion_01.jpg" alt="alt" /></a></div>
-                    <div class="col-6 col-lg-3"><a href="shop-view-grid.html"><img src="/assets/img/promotion/promotion_02.jpg" alt="alt" /></a></div>
-                    <div class="col-6 col-lg-3"><a href="shop-view-grid.html"><img src="/assets/img/promotion/promotion_03.jpg" alt="alt" /></a></div>
-                    <div class="col-6 col-lg-3"><a href="shop-view-grid.html"><img src="/assets/img/promotion/promotion_04.jpg" alt="alt" /></a></div>
+                    <div class="col-6 col-lg-3"><a href="{{route('shop')}}"><img src="/assets/img/promotion/promotion_01.jpg" alt="alt" /></a></div>
+                    <div class="col-6 col-lg-3"><a href="{{route('shop')}}"><img src="/assets/img/promotion/promotion_02.jpg" alt="alt" /></a></div>
+                    <div class="col-6 col-lg-3"><a href="{{route('shop')}}"><img src="/assets/img/promotion/promotion_03.jpg" alt="alt" /></a></div>
+                    <div class="col-6 col-lg-3"><a href="{{route('shop')}}"><img src="/assets/img/promotion/promotion_04.jpg" alt="alt" /></a></div>
                 </div>
             </div>
         </div>
         <section class="section-featured--default ps-home--block">
             <div class="container">
                 <div class="ps-block__header">
-                    <h3 class="ps-block__title">Featured Categories</h3><a class="ps-block__view" href="shop-categories.html">View all<i class="icon-chevron-right"></i></a>
+                    <h3 class="ps-block__title">Featured Categories</h3><a class="ps-block__view" href="{{route('shop-categories')}}">View all<i class="icon-chevron-right"></i></a>
                 </div>
                 <div class="featured--content">
                     <div class="featured__first">
-                        <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
-                            <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Fresh</a>
+                        <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
+                            <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Fresh</a>
                                 <p class="ps-product__quantity">135 items</p>
                             </div>
                         </div>
@@ -82,57 +82,57 @@
                     <div class="featured__group">
                         <div class="row m-0">
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Food Cupboard</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Food Cupboard</a>
                                         <p class="ps-product__quantity">34 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/03-Bakery/03_6a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Barkery</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/03-Bakery/03_6a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Barkery</a>
                                         <p class="ps-product__quantity">27 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Ready Meals</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Ready Meals</a>
                                         <p class="ps-product__quantity">13 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Drinks, Tea & Coffee</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Drinks, Tea & Coffee</a>
                                         <p class="ps-product__quantity">42 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_1a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Beer, Wine & Spirits</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_1a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Beer, Wine & Spirits</a>
                                         <p class="ps-product__quantity">54 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/08-BabyChild/08_5a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Baby & Child</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/08-BabyChild/08_5a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Baby & Child</a>
                                         <p class="ps-product__quantity">48 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/04-FrozenFoods/04_2a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Frozen Foods</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/04-FrozenFoods/04_2a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Frozen Foods</a>
                                         <p class="ps-product__quantity">44 items</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 p-0">
-                                <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" /></a>
-                                    <div class="ps-product__content"><a class="ps-product__name" href="product-default.html">Kitchen & Dining</a>
+                                <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" /></a>
+                                    <div class="ps-product__content"><a class="ps-product__name" href="{{route('product-view')}}">Kitchen & Dining</a>
                                         <p class="ps-product__quantity">23 items</p>
                                     </div>
                                 </div>
@@ -142,51 +142,51 @@
                 </div>
                 <div class="featured--content-mobile">
                     <div class="owl-carousel" data-owl-auto="true" data-owl-loop="true" data-owl-speed="10000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="on">
-                        <div class="product-slide"><a class="ps-product--vertical item-first" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" />
+                        <div class="product-slide"><a class="ps-product--vertical item-first" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Fresh</h5>
                                     <p class="ps-product__quantity">135 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Food Cupboard</h5>
                                     <p class="ps-product__quantity">34 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/03-Bakery/03_6a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/03-Bakery/03_6a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Barkery</h5>
                                     <p class="ps-product__quantity">27 items</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="product-slide"><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" />
+                        <div class="product-slide"><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Ready Meals</h5>
                                     <p class="ps-product__quantity">13 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Drinks, Tea & Coffee</h5>
                                     <p class="ps-product__quantity">42 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_1a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_1a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Beer, Wine & Spirits</h5>
                                     <p class="ps-product__quantity">54 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/08-BabyChild/08_5a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/08-BabyChild/08_5a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Baby & Child</h5>
                                     <p class="ps-product__quantity">48 items</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="product-slide"><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/04-FrozenFoods/04_2a.jpg" alt="alt" />
+                        <div class="product-slide"><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/04-FrozenFoods/04_2a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Frozen Foods</h5>
                                     <p class="ps-product__quantity">44 items</p>
                                 </div>
-                            </a><a class="ps-product--vertical" href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" />
+                            </a><a class="ps-product--vertical" href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" />
                                 <div class="ps-product__content">
                                     <h5 class="ps-product__name">Kitchen & Dining</h5>
                                     <p class="ps-product__quantity">23 items</p>
@@ -204,10 +204,10 @@
                 </div>
                 <div class="flashdeal--content">
                     <div class="owl-carousel" data-owl-auto="false" data-owl-loop="false" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="6" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="6" data-owl-duration="1000" data-owl-mousedrag="on">
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$2.90</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">25% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Cornboat Holders</h5>
                                 </a>
                                 <p class="ps-product__unit">4 per pack</p>
@@ -237,10 +237,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_20a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_20a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$1.49</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">9% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Saute Pan Silver</h5>
                                 </a>
                                 <p class="ps-product__unit">500ml</p>
@@ -270,10 +270,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_10a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_10a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">26% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Nesco</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>Nesco</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Crock Pot Slow Cooker</h5>
                                 </a>
                                 <p class="ps-product__unit">$ per pack</p>
@@ -303,10 +303,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_25a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_25a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$6.90</span><span class="ps-product__off">55% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Karery</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>Karery</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Emoticon Cookie</h5>
                                 </a>
                                 <p class="ps-product__unit">330ml</p>
@@ -336,10 +336,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">30% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Karey Store</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>Karey Store</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Broccoli Crowns</h5>
                                 </a>
                                 <p class="ps-product__unit">4 per pack</p>
@@ -369,10 +369,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_11a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_11a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$3.39</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Arla Organic Free Range Milk</h5>
                                 </a>
                                 <p class="ps-product__unit">1 per pack</p>
@@ -402,10 +402,10 @@
                                 <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
                             </div>
                         </div>
-                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_20a.jpg" alt="alt" /></a>
+                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_20a.jpg" alt="alt" /></a>
                             <div class="ps-product__content">
                                 <p class="ps-product-price-block"><span class="ps-product__sale">$1.49</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">9% Off</span></p>
-                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="product-default.html">
+                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="{{route('product-view')}}">
                                     <h5 class="ps-product__name">Saute Pan Silver</h5>
                                 </a>
                                 <p class="ps-product__unit">500ml</p>
@@ -473,16 +473,16 @@
                                     <div class="categories__list-item"><a href="#">Vegetarian Foods</a></div>
                                 </div>
                             </div>
-                            <div class="categories__footer"><a href="shop-categories.html">
+                            <div class="categories__footer"><a href="{{route('shop-categories')}}">
                                     <u>View all</u><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="categories__products">
                             <div class="row m-0">
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Corn, Yellow Sweet</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Corn, Yellow Sweet</a></h5>
                                             <p class="ps-product__unit">4 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -510,10 +510,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Oranges, Valencia</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Oranges, Valencia</a></h5>
                                             <p class="ps-product__unit">5 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -541,10 +541,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_13a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_13a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Celery</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Celery</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -572,10 +572,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Watermelon, Seedless</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Watermelon, Seedless</a></h5>
                                             <p class="ps-product__unit">450g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -603,10 +603,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">35% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">35% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Broccoli Crowns</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Broccoli Crowns</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -634,10 +634,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_17a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_17a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Tomato Nature Sweet Glor</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Tomato Nature Sweet Glor</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -665,10 +665,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__stock">Out of stock </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__stock">Out of stock </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Oniins, Green</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Oniins, Green</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -696,10 +696,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Pork Steak Jumbo Pack</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Pork Steak Jumbo Pack</a></h5>
                                             <p class="ps-product__unit">1kg</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -757,16 +757,16 @@
                                     <div class="categories__list-item"><a href="#">Crackers</a></div>
                                 </div>
                             </div>
-                            <div class="categories__footer"><a href="shop-categories.html">
+                            <div class="categories__footer"><a href="{{route('shop-categories')}}">
                                     <u>View all</u><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="categories__products">
                             <div class="row m-0">
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Assorted Donuts Each</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Assorted Donuts Each</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -794,10 +794,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">15% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">15% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Bunny Round White</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Bunny Round White</a></h5>
                                             <p class="ps-product__unit">150g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -825,10 +825,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">French Bread</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">French Bread</a></h5>
                                             <p class="ps-product__unit">150g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -856,10 +856,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_14a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_14a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Bunny Hmburger Buns</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Bunny Hmburger Buns</a></h5>
                                             <p class="ps-product__unit">300ml</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -887,10 +887,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Dozen Donut Holes</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Dozen Donut Holes</a></h5>
                                             <p class="ps-product__unit">180g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -918,10 +918,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Natures Own 100% Wheat</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Natures Own 100% Wheat</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -949,10 +949,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_12a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_12a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">$ Ct Pills Twirls</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">$ Ct Pills Twirls</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -980,10 +980,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">50% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">50% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Ball Park Hot Dog Buns</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Ball Park Hot Dog Buns</a></h5>
                                             <p class="ps-product__unit">90lbs</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1042,16 +1042,16 @@
                                     <div class="categories__list-item"><a href="#">Kids' Meals</a></div>
                                 </div>
                             </div>
-                            <div class="categories__footer"><a href="shop-categories.html">
+                            <div class="categories__footer"><a href="{{route('shop-categories')}}">
                                     <u>View all</u><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="categories__products">
                             <div class="row m-0">
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Fried Chicken Tenders</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Fried Chicken Tenders</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1079,10 +1079,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Hot Mashed Potatoes</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Hot Mashed Potatoes</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1110,10 +1110,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">90% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">90% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Mac & Cheese</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Mac & Cheese</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1141,10 +1141,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Fried piece Chicken</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Fried piece Chicken</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1172,10 +1172,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Resers Cole Slaw</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Resers Cole Slaw</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1203,10 +1203,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_6a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_6a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Tailgater Ham Sandwich Pack</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Tailgater Ham Sandwich Pack</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1234,10 +1234,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Rsr Potato Salad</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Rsr Potato Salad</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1265,10 +1265,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_9a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/05-ReadyMeals/05_9a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Kret Ham Off The Bone</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Kret Ham Off The Bone</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1325,16 +1325,16 @@
                                     <div class="categories__list-item"><a href="#">Cordials</a></div>
                                 </div>
                             </div>
-                            <div class="categories__footer"><a href="shop-categories.html">
+                            <div class="categories__footer"><a href="{{route('shop-categories')}}">
                                     <u>View all</u><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="categories__products">
                             <div class="row m-0">
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Apple Rasp Juice</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Apple Rasp Juice</a></h5>
                                             <p class="ps-product__unit">300g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1362,10 +1362,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Kevita Kom Ginger</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Kevita Kom Ginger</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1393,10 +1393,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Hs Grape Juice</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Hs Grape Juice</a></h5>
                                             <p class="ps-product__unit">550ml</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1424,10 +1424,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_12a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_12a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Mn Lemonade</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Mn Lemonade</a></h5>
                                             <p class="ps-product__unit">1.5L</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1455,10 +1455,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">25% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Broccoli Crowns</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Broccoli Crowns</a></h5>
                                             <p class="ps-product__unit">1 box</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1486,10 +1486,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Always Save Frozen Lemonade</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Always Save Frozen Lemonade</a></h5>
                                             <p class="ps-product__unit">200g</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1517,10 +1517,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_9a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Onions, Green</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Onions, Green</a></h5>
                                             <p class="ps-product__unit">1.5L</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1548,10 +1548,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Kevita Pineapple Peach</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Kevita Pineapple Peach</a></h5>
                                             <p class="ps-product__unit">330ml</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1608,16 +1608,16 @@
                                     <div class="categories__list-item"><a href="#">Glassware</a></div>
                                 </div>
                             </div>
-                            <div class="categories__footer"><a href="shop-categories.html">
+                            <div class="categories__footer"><a href="{{route('shop-categories')}}">
                                     <u>View all</u><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="categories__products">
                             <div class="row m-0">
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_1a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Cornboat Holders</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Cornboat Holders</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1645,10 +1645,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Saute Pan Silver</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Saute Pan Silver</a></h5>
                                             <p class="ps-product__unit">2 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1676,10 +1676,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Crock Pot Slow Cooker</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Crock Pot Slow Cooker</a></h5>
                                             <p class="ps-product__unit">4 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1707,10 +1707,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">49% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">49% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Emoticon Cookie</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Emoticon Cookie</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1738,10 +1738,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_5a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Broccoli Crowns</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Broccoli Crowns</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1769,10 +1769,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_10a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_10a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__offbadge">30% Off </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Arla Organic Free Range Milk</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Arla Organic Free Range Milk</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1800,10 +1800,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a><span class="ps-badge ps-product__new">New </span>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Dinamond Pan</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Dinamond Pan</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1831,10 +1831,10 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
-                                    <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_13a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
+                                    <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/09-KitchenDining/09_13a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
                                         <div class="ps-product__content">
                                             <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                            <h5><a class="ps-product__name" href="product-default.html">Pork Steak Jumbo Pack</a></h5>
+                                            <h5><a class="ps-product__name" href="{{route('product-view')}}">Pork Steak Jumbo Pack</a></h5>
                                             <p class="ps-product__unit">1 per pack</p>
                                             <div class="ps-product__rating">
                                                 <select class="rating-stars">
@@ -1873,36 +1873,36 @@
                     <h3 class="ps-block__title">Recommendations</h3>
                     <div class="ps-block__list">
                         <ul>
-                            <li class="menu-item"><a href="shop-categories.html">New Arrivals</a></li>
-                            <li class="menu-item"><a href="shop-categories.html">Best Selling</a></li>
-                            <li class="menu-item"><a href="shop-categories.html">Most Popular</a></li>
-                            <li class="menu-item"><a href="shop-categories.html">On Sales</a></li>
-                            <li class="menu-item"><a href="shop-categories.html">All</a></li>
+                            <li class="menu-item"><a href="{{route('shop-categories')}}">New Arrivals</a></li>
+                            <li class="menu-item"><a href="{{route('shop-categories')}}">Best Selling</a></li>
+                            <li class="menu-item"><a href="{{route('shop-categories')}}">Most Popular</a></li>
+                            <li class="menu-item"><a href="{{route('shop-categories')}}">On Sales</a></li>
+                            <li class="menu-item"><a href="{{route('shop-categories')}}">All</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="recommendations__content">
                     <div class="owl-carousel" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="3" data-owl-item-xl="3" data-owl-duration="1000" data-owl-mousedrag="on">
                         <div class="recommendation-carousel">
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Chicken Drums Jumbo Pk</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Chicken Drums Jumbo Pk</a></h5>
                                     <p class="ps-product__unit">1kg</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$13.99</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Grapes, Red Seedless</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Grapes, Red Seedless</a></h5>
                                     <p class="ps-product__unit">100g</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">20% Off</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_11a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_11a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Honest Organic Still Beer</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Honest Organic Still Beer</a></h5>
                                     <p class="ps-product__unit">4 per pack</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$39.90</span>
                                     </p>
@@ -1910,25 +1910,25 @@
                             </div>
                         </div>
                         <div class="recommendation-carousel">
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_27a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_27a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">British Organic Meat</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">British Organic Meat</a></h5>
                                     <p class="ps-product__unit">500g</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">60% Off</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_7a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_7a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Duchy Lemonade</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Duchy Lemonade</a></h5>
                                     <p class="ps-product__unit">100g</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$4.49</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_8a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_8a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Jacks Original Pepperoni</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Jacks Original Pepperoni</a></h5>
                                     <p class="ps-product__unit">750ml</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">15% Off</span>
                                     </p>
@@ -1936,25 +1936,25 @@
                             </div>
                         </div>
                         <div class="recommendation-carousel">
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Corn Yellow Sweet</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Corn Yellow Sweet</a></h5>
                                     <p class="ps-product__unit">4 per pack</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$6.99</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_2a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_2a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Extreme Budweiser Light Can</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Extreme Budweiser Light Can</a></h5>
                                     <p class="ps-product__unit">330ml</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">45% Off</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_3a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/02-FoodCupboard/02_3a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Large Green Bell Snack</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Large Green Bell Snack</a></h5>
                                     <p class="ps-product__unit">180g</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$9.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">16% Off</span>
                                     </p>
@@ -1962,25 +1962,25 @@
                             </div>
                         </div>
                         <div class="recommendation-carousel">
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Chicken Drums Jumbo Pk</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Chicken Drums Jumbo Pk</a></h5>
                                     <p class="ps-product__unit">1kg</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$13.99</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Grapes, Red Seedless</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Grapes, Red Seedless</a></h5>
                                     <p class="ps-product__unit">100g</p>
                                     <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$11.90</span><span class="ps-product__off">20% Off</span>
                                     </p>
                                 </div>
                             </div>
-                            <div class="ps-product--vertical"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_11a.jpg" alt="alt" /></a>
+                            <div class="ps-product--vertical"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/07-Beer-WineSpirits/07_11a.jpg" alt="alt" /></a>
                                 <div class="ps-product__content">
-                                    <h5><a class="ps-product__name" href="product-default.html">Honest Organic Still Beer</a></h5>
+                                    <h5><a class="ps-product__name" href="{{route('product-view')}}">Honest Organic Still Beer</a></h5>
                                     <p class="ps-product__unit">4 per pack</p>
                                     <p class="ps-product-price-block"><span class="ps-product__price-default">$39.90</span>
                                     </p>
@@ -1994,10 +1994,10 @@
         <section class="section-recent--default ps-home--block">
             <div class="container">
                 <div class="ps-block__header">
-                    <h3 class="ps-block__title">Your Recent Viewed</h3><a class="ps-block__view" href="shop-categories.html">View all <i class="icon-chevron-right"></i></a>
+                    <h3 class="ps-block__title">Your Recent Viewed</h3><a class="ps-block__view" href="{{route('shop-categories')}}">View all <i class="icon-chevron-right"></i></a>
                 </div>
                 <div class="recent__content">
-                    <div class="owl-carousel" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="8" data-owl-item-xs="3" data-owl-item-sm="3" data-owl-item-md="5" data-owl-item-lg="8" data-owl-item-xl="8" data-owl-duration="1000" data-owl-mousedrag="on"><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_30a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_10a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_28b.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_15a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_5a.jpg" alt="alt" /></a><a class="recent-item" href="index.html"><img src="/assets/img/products/01-Fresh/01_32a.jpg" alt="alt" /></a>
+                    <div class="owl-carousel" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="8" data-owl-item-xs="3" data-owl-item-sm="3" data-owl-item-md="5" data-owl-item-lg="8" data-owl-item-xl="8" data-owl-duration="1000" data-owl-mousedrag="on"><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_1a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_2a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_30a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_10a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_18a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_28b.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_31a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_15a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_5a.jpg" alt="alt" /></a><a class="recent-item" href="{{route('welcome')}}"><img src="/assets/img/products/01-Fresh/01_32a.jpg" alt="alt" /></a>
                     </div>
                 </div>
             </div>
@@ -2076,15 +2076,15 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <div class="alert__success"><i class="icon-checkmark-circle"></i> "Morrisons The Best Beef Topside" successfully added to you cart. <a href="shopping-cart.html">View cart(3)</a></div>
+                            <div class="alert__success"><i class="icon-checkmark-circle"></i> "Morrisons The Best Beef Topside" successfully added to you cart. <a href="{{route('shop-cart')}}">View cart(3)</a></div>
                             <hr>
                             <h3 class="cart__title">CUSTOMERS WHO BOUGHT THIS ALSO BOUGHT:</h3>
                             <div class="cart__content">
                                 <div class="owl-carousel" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="4" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="2" data-owl-item-lg="4" data-owl-item-xl="4" data-owl-duration="1000" data-owl-mousedrag="on">
                                     <div class="cart-item">
-                                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_35a.jpg" alt="alt" /></a>
+                                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_35a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="{{route('product-view')}}">
                                                     <h5 class="ps-product__name">Extreme Budweiser Light Can</h5>
                                                 </a>
                                                 <p class="ps-product__unit">500g</p>
@@ -2103,9 +2103,9 @@
                                         </div>
                                     </div>
                                     <div class="cart-item">
-                                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
+                                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_16a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p><a href="{{route('product-view')}}">
                                                     <h5 class="ps-product__name">Honest Organic Still Lemonade</h5>
                                                 </a>
                                                 <p class="ps-product__unit">100g</p>
@@ -2124,9 +2124,9 @@
                                         </div>
                                     </div>
                                     <div class="cart-item">
-                                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_12a.jpg" alt="alt" /></a>
+                                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_12a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>John Farm</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>John Farm</p><a href="{{route('product-view')}}">
                                                     <h5 class="ps-product__name">Natures Own 100% Wheat</h5>
                                                 </a>
                                                 <p class="ps-product__unit">100g</p>
@@ -2145,9 +2145,9 @@
                                         </div>
                                     </div>
                                     <div class="cart-item">
-                                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_15a.jpg" alt="alt" /></a>
+                                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_15a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p><a href="{{route('product-view')}}">
                                                     <h5 class="ps-product__name">Avocado, Hass Large</h5>
                                                 </a>
                                                 <p class="ps-product__unit">300g</p>
@@ -2166,9 +2166,9 @@
                                         </div>
                                     </div>
                                     <div class="cart-item">
-                                        <div class="ps-product--standard"><a href="product-default.html"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_3a.jpg" alt="alt" /></a>
+                                        <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/06-SoftDrinks-TeaCoffee/06_3a.jpg" alt="alt" /></a>
                                             <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="product-default.html">
+                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p><a href="{{route('product-view')}}">
                                                     <h5 class="ps-product__name">Kevita Kom Ginger</h5>
                                                 </a>
                                                 <p class="ps-product__unit">200g</p>

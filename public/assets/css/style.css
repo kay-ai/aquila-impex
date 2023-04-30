@@ -274,7 +274,7 @@ figure {
 }
 
 .text-3nd {
-  color: #80990b !important;
+  color: var(--color-1) !important;
 }
 
 .text-orange {
@@ -1230,7 +1230,7 @@ label:hover:before {
 }
 
 .ps-header--contact .ps-header__text {
-  color: #80990b;
+  color: var(--color-1);
   font-weight: 500;
 }
 
@@ -1403,14 +1403,14 @@ label:hover:before {
 .ps-page--business .notfound__content p span,
 .ps-page--business .ps-breadcrumb li.active a,
 .ps-page--business .box--icon .block__icon i {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-page--business .blog--widget .widget__tags li:hover,
 .ps-page--business .post__blog .post__tags li:hover,
 .ps-page--business .steps--block li.active .round-tab,
 .ps-page--business .steps--block li.active:before {
-  background-color: #80990b;
+  background-color: var(--color-1);
 }
 
 .blog--widget .input-group {
@@ -3815,7 +3815,7 @@ label:hover:before {
 }
 
 .ps-product--business .ps-product__link i {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-product--business .ps-product__content {
@@ -3829,7 +3829,7 @@ label:hover:before {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #80990b;
+  border: 2px solid var(--color-1);
   border-radius: 3px;
   z-index: -1;
 }
@@ -4442,11 +4442,11 @@ label:hover:before {
 
 .ps-banner--business .owl-dots .active span {
   width: 30px;
-  background-color: #80990b !important;
+  background-color: var(--color-1) !important;
 }
 
 .ps-banner--business .ps-shopnow a {
-  background-color: #80990b !important;
+  background-color: var(--color-1) !important;
 }
 
 .ps-banner--business .ps-width-subtitle {
@@ -7989,7 +7989,7 @@ label:hover:before {
   width: 60%;
   bottom: 100%;
   left: 15px;
-  background-color: #80990b;
+  background-color: var(--color-1);
   display: none;
 }
 
@@ -8002,7 +8002,7 @@ label:hover:before {
 }
 
 .ps-header--business .ps-business--nav .menu .sub-menu--mega li a.active, .ps-header--business .ps-business--nav .menu .sub-menu--mega li a:hover {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 @media (min-width: 1024px) {
@@ -8237,7 +8237,7 @@ label:hover:before {
 
 .ps-footer--business .ps-footer__newsletter {
   padding: 50px 0;
-  background-color: #80990b;
+  background-color: var(--color-1);
   background-image: url("../img/pages/bg-newsletter.jpg");
   background-size: cover;
   background-position: center center;
@@ -8287,7 +8287,7 @@ label:hover:before {
 }
 
 .ps-footer--business .ps-contact__box:hover .ps-contact__text {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-footer--business .ps-contact__title {
@@ -8340,7 +8340,7 @@ label:hover:before {
 }
 
 .ps-footer--business .ps-about__logo b {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-footer--business .ps-about__social i {
@@ -8359,7 +8359,7 @@ label:hover:before {
 }
 
 .ps-footer--business .ps-about__social a:hover i {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-footer--business .ps-link__title {
@@ -8385,7 +8385,7 @@ label:hover:before {
 }
 
 .ps-footer--business .ps-link__list a {
-  color: #80990b;
+  color: var(--color-1);
   font-size: 14px;
 }
 
@@ -8416,7 +8416,7 @@ label:hover:before {
 }
 
 .ps-footer--business .ps-footer__bottom p span {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-footer--business .ps-footer__bottom .ps-footer__list li {
@@ -14633,7 +14633,7 @@ label:hover:before {
 .ps-business__subtitle {
   font-size: 13px;
   text-transform: uppercase;
-  color: #80990b;
+  color: var(--color-1);
   text-align: center;
   font-weight: 600;
 }
@@ -14692,7 +14692,7 @@ label:hover:before {
 
 .ps-business--content .ps-business__carousel .owl-dots .active span {
   width: 30px;
-  background-color: #80990b !important;
+  background-color: var(--color-1) !important;
 }
 
 .ps-business--content .ps-business__carousel .ps-business__item {
@@ -14723,7 +14723,7 @@ label:hover:before {
 }
 
 .ps-business--content .ps-business__carousel .ps-item__content a {
-  color: #80990b;
+  color: var(--color-1);
   font-weight: 500;
   font-size: 14px;
 }
@@ -14752,7 +14752,7 @@ label:hover:before {
 }
 
 .ps-business--content .ps-reason__box .ps-reason__icon i {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-reason__box .ps-reason__number {
@@ -14776,7 +14776,7 @@ label:hover:before {
 }
 
 .ps-business--content .ps-reason__box:hover .ps-reason__title {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-reason__box:hover:after {
@@ -14786,7 +14786,7 @@ label:hover:before {
   top: -1px;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
-  border: 1px solid #80990b;
+  border: 1px solid var(--color-1);
 }
 
 .ps-business--content .ps-business__blog .ps-post--related {
@@ -14798,11 +14798,11 @@ label:hover:before {
 }
 
 .ps-business--content .ps-business__blog .ps-post--related .post__date span {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-business__blog .ps-post--related:hover .post__type, .ps-business--content .ps-business__blog .ps-post--related:hover .post__title {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-business__customer .ps-business__subtitle, .ps-business--content .ps-business__customer .ps-business__title {
@@ -14825,7 +14825,7 @@ label:hover:before {
 
 .ps-business--content .ps-business__customer .ps-item__icon i {
   font-size: 37px;
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-business__customer .ps-item__des {
@@ -14868,7 +14868,7 @@ label:hover:before {
 }
 
 .ps-business--content .ps-business__faq .ps-faq__footer a {
-  color: #80990b;
+  color: var(--color-1);
   text-decoration: underline;
 }
 
@@ -14884,11 +14884,11 @@ label:hover:before {
 }
 
 .ps-business--content .ps-business__faq .faq__item.active .faq__question {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--content .ps-business__faq .faq__item.active .faq__question span {
-  background-color: #80990b;
+  background-color: var(--color-1);
 }
 
 .ps-business--content .ps-business__faq .faq__item.active .faq__question i {
@@ -14964,7 +14964,7 @@ label:hover:before {
 }
 
 .ps-business--product .ps-product__categorie .ps-product__box {
-  background-color: #80990b;
+  background-color: var(--color-1);
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -14996,7 +14996,7 @@ label:hover:before {
 .ps-business--about .ps-about__subtitle {
   font-size: 13px;
   text-transform: uppercase;
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-business--about .ps-about__title {
@@ -15017,7 +15017,7 @@ label:hover:before {
 }
 
 .ps-business--about .ps-about__text a {
-  color: #80990b;
+  color: var(--color-1);
   font-weight: 600;
   text-decoration: underline;
 }
@@ -15044,7 +15044,7 @@ label:hover:before {
   position: absolute;
   top: -1px;
   left: -1px;
-  border: 1px solid #80990b;
+  border: 1px solid var(--color-1);
 }
 
 @media (min-width: 1024px) {
@@ -15069,7 +15069,7 @@ label:hover:before {
 .ps-business--download .ps-download__subtitle {
   font-size: 13px;
   text-transform: uppercase;
-  color: #80990b;
+  color: var(--color-1);
   margin-bottom: 3px;
 }
 
@@ -15113,7 +15113,7 @@ label:hover:before {
 }
 
 .ps-business--list li i {
-  color: #80990b;
+  color: var(--color-1);
 }
 
 .ps-home--sidebar {

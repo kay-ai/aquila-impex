@@ -28,7 +28,11 @@
     </head>
 
     <body>
-        @include('partials.header')
+        @if (request()->routeIs('blog*'))
+            @include('partials.blog-header')
+        @else
+            @include('partials.header')
+        @endif
         @yield('main')
         @include('partials.footer')
         @include('partials.mobile-footer')
