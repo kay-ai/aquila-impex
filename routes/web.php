@@ -29,3 +29,5 @@ Route::get('/shop', [PagesController::class, 'shop'])->name('shop');
 Route::get('/shop-categories', [PagesController::class, 'shopCategories'])->name('shop-categories');
 Route::get('/shop-cart', [PagesController::class, 'shopCart'])->name('shop-cart');
 Route::get('/product-view', [PagesController::class, 'productView'])->name('product-view');
+
+Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
