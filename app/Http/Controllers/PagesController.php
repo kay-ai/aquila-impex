@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function index(){
+        $featured_cat = Category::latest()->get();
+        $flash_deal = '';
+        return view('welcome', compact('featured_cat', 'flash_deal'));
+    }
+
     public function dashboard(){
-        return view('pages.dashboard.dashboard');
+        $product = Product::latest()->get();
+        $product_inventory = count($product);
+        return view('pages.dashboard.dashboard', compact('product_inventory'));
     }
 
     public function shop(){

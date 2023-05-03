@@ -28,6 +28,7 @@
         @include('partials.dashboard.sidebar')
         <section class="main_content dashboard_part">
             @include('partials.dashboard.header')
+            @include('includes.messages')
             @yield('content')
             <div class="footer_part">
                 <div class="container-fluid">

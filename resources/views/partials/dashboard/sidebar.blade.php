@@ -8,7 +8,7 @@
     </div>
     <ul id="sidebar_menu">
         <li class="mm-active">
-            <a class="" href="javascript:void();">
+            <a class="" href="{{route('dashboard')}}">
                 <img src="/assets/dashboard/img/menu-icon/1.svg" alt="">
                 <span>Dashboard</span>
             </a>
@@ -19,8 +19,8 @@
                 <span>Products</span>
             </a>
             <ul>
-                <li><a href="">New Product</a></li>
-                <li><a href="">All Products</a></li>
+                <li><a href="{{route('product.create')}}">New Product</a></li>
+                <li><a href="{{route('product.index')}}">All Products</a></li>
             </ul>
         </li>
         <li class="">
@@ -29,8 +29,8 @@
                 <span>Categories</span>
             </a>
             <ul>
-                <li><a href="">New category</a></li>
-                <li><a href="">All categoriess</a></li>
+                <li><a href="{{route('category.create')}}">New category</a></li>
+                <li><a href="{{route('category.index')}}">All categoriess</a></li>
             </ul>
         </li>
     </ul>

@@ -12,22 +12,22 @@
                                     <div class="quick_activity_wrap">
                                         <div class="single_quick_activity">
                                             <h4>Total Income</h4>
-                                            <h3>&#8358; <span class="counter">5,79,000</span> </h3>
+                                            <h3>&#8358; <span class="counter">0</span> </h3>
                                             <p>Saved 25%</p>
                                         </div>
                                         <div class="single_quick_activity">
                                             <h4>Products sold</h4>
-                                            <h3><span class="counter">79,000</span> </h3>
+                                            <h3><span class="counter">0</span> </h3>
                                             <p>55% more than last week</p>
                                         </div>
                                         <div class="single_quick_activity">
-                                            <h4>Total Inventory</h4>
-                                            <h3><span class="counter">92,000</span> </h3>
+                                            <h4>Products Inventory</h4>
+                                            <h3><span class="counter">{{$product_inventory}}</span> </h3>
                                             <p>15% more than last week</p>
                                         </div>
                                         <div class="single_quick_activity">
                                             <h4>Vendors</h4>
-                                            <h3><span class="counter">1200</span> </h3>
+                                            <h3><span class="counter">1</span> </h3>
                                         </div>
                                     </div>
                                 </div>

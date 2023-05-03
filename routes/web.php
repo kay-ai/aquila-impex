@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [PagesController::class, 'index'])->name('welcome');
 
 Auth::routes();
 
@@ -31,3 +31,5 @@ Route::get('/shop-cart', [PagesController::class, 'shopCart'])->name('shop-cart'
 Route::get('/product-view', [PagesController::class, 'productView'])->name('product-view');
 
 Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
+Route::resource('product', ProductController::class);
+Route::resource('category', CategoryController::class);

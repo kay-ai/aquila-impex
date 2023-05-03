@@ -8,14 +8,14 @@
                     <li class="active"><a href="{{route('welcome')}}">Home</a></li>
                     <li class="active"><a href="{{route('shop')}}">Fresh</a></li>
                     <li class="active"><a href="{{route('shop')}}">Meat &amp; Poultry</a></li>
-                    <li><a href="javascript:void(0);">Organic Lean Beef Steak Mince Low Fat</a></li>
+                    <li><a href="javascript:void(0);">{{$product->name}}</a></li>
                 </ul>
             </div>
         </div>
         <section class="section--product-type section-product--default">
             <div class="container">
                 <div class="product__header">
-                    <h3 class="product__name">Organic Lean Beef Steak Mince Low Fat</h3>
+                    <h3 class="product__name">{{$product->name}}</h3>
                     <div class="row">
                         <div class="col-12 col-lg-7 product__code">
                             <select class="rating-stars">
@@ -24,7 +24,7 @@
                                 <option value="3">3</option>
                                 <option value="4" selected="selected">4</option>
                                 <option value="5">5</option>
-                            </select><span class="product__review">4 Customer Review</span><span class="product__id">SKU: <span>#VEG20938</span></span>
+                            </select><span class="product__review">4 Customer Review</span><span class="product__id">Barcode: <span>{{$product->inventory->barcode ?? '0000000'}}</span></span>
                         </div>
                         <div class="col-12 col-lg-5">
                             <div class="ps-social--share"><a class="ps-social__icon facebook" href="#"><i class="fa fa-thumbs-up"></i><span>Like</span><span class="ps-social__number">0</span></a><a class="ps-social__icon facebook" href="#"><i class="fa fa-facebook-square"></i><span>Like</span><span class="ps-social__number">0</span></a><a class="ps-social__icon twitter" href="#"><i class="fa fa-twitter"></i><span>Like</span></a><a class="ps-social__icon" href="#"><i class="fa fa-plus-square"></i><span>Like</span></a></div>
@@ -39,16 +39,23 @@
                                     <div class="col-12 col-lg-6">
                                         <div class="ps-product__variants">
                                             <div class="ps-product__gallery">
-                                                <div class="ps-gallery__item active"><img src="/assets/img/products/01-Fresh/01_35a.jpg" alt="alt" /></div>
-                                                <div class="ps-gallery__item"><img src="/assets/img/products/01-Fresh/01_35b.jpg" alt="alt" /></div>
-                                                <div class="ps-gallery__item" data-video-url="https://sachinchoolur.github.io/lightGallery/static/videos/video4.mp4"><img src="/assets/img/products/01-Fresh/01_35b.jpg" alt="alt" />
+                                                @if(count($product->images)>0)
+                                                    @foreach ($product->images as $image)
+                                                        <div class="ps-gallery__item {{$image->first() ? 'active' : ''}}"><img src="{{Storage::url($image->path)}}" alt="{{$product->name}}" /></div>
+                                                    @endforeach
+                                                @endif
+                                                {{-- <div class="ps-gallery__item" data-video-url="https://sachinchoolur.github.io/lightGallery/static/videos/video4.mp4"><img src="/assets/img/products/01-Fresh/01_35b.jpg" alt="alt" />
                                                     <ul class="ps-gallery--poster">
                                                         <li><span></span><i class="fa fa-play-circle"></i></li>
                                                     </ul>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                             <div class="ps-product__thumbnail">
-                                                <div class="ps-product__zoom"><img id="ps-product-zoom" src="/assets/img/products/01-Fresh/01_35b.jpg" alt="alt" />
+                                                @php
+                                                    $image = $product->images()->first();
+                                                @endphp
+                                                <div class="ps-product__zoom">
+                                                    <img id="ps-product-zoom" src="{{Storage::url($image->path)}}" alt="{{$product->name}}" />
                                                     <ul class="ps-gallery--poster" id="ps-lightgallery-videos" data-video-url="#">
                                                         <li data-html="#video-play"><span></span><i class="fa fa-play-circle"></i></li>
                                                     </ul>
@@ -62,21 +69,25 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <div class="ps-product__price">$5.99 - $12.99</div>
+                                        <div class="ps-product__price">&#8358;{{$product->price ?? '0'}}</div>
                                         <div class="ps-product__variable"><span>Weight:  <span class="ps-product__attribute-value">500g</span></span>
                                             <div class="ps-product__type"><span class="ps-product__attribute attribute-text" data-value="200g">200g</span><span class="ps-product__attribute attribute-text active" data-value="500g">500g</span><span class="ps-product__attribute attribute-text" data-value="1kg">1kg</span>
                                             </div><span class="ps-product__clear">Clear</span>
                                         </div>
-                                        <div class="ps-product__sale"><span class="price-sale">$8.90</span><span class="price">$9.90</span><span class="ps-product__off">15% Off</span>
+                                        <div class="ps-product__sale">
+                                            <span class="price-sale">&#8358;{{$product->price ?? '0'}}</span>
+                                            {{-- <span class="price">$9.90</span> --}}
+                                            {{-- <span class="ps-product__off">15% Off</span> --}}
                                         </div>
-                                        <div class="ps-product__avai alert__success">Availability: <span>129 in stock</span>
+                                        <div class="ps-product__avai alert__success">Availability: <span>{{$product->inventory->quantity}} in stock</span>
                                         </div>
                                         <div class="ps-product__info">
-                                            <ul class="ps-list--rectangle">
+                                            <span>{{$product->short_desc}}</span>
+                                            {{-- <ul class="ps-list--rectangle">
                                                 <li> <span><i class="icon-square"></i></span>Type: Organic</li>
                                                 <li> <span><i class="icon-square"></i></span>MFG: Jun 4.2020</li>
                                                 <li> <span><i class="icon-square"></i></span>LIFE: 30 days</li>
-                                            </ul>
+                                            </ul> --}}
                                         </div>
                                         <div class="ps-product__shopping">
                                             <div class="ps-product__quantity">
@@ -90,10 +101,11 @@
                                         </div>
                                         <div class="ps-product__category">
                                             <ul>
-                                                <li>Brand: <a href='shop-all-brands.html' class='text-success'>FarmMatket</a></li>
-                                                <li>Vendor: <a href='shop-all-brands.html' class='text-success'>Local Argus</a></li>
-                                                <li>Categories: <a href='shop-all-brands.html' class='text-success'>Fresh</a>, <a href='shop-all-brands.html' class='text-success'>Vegetales</a>, <a href='shop-all-brands.html' class='text-success'>Olives & Selection Platters</a></li>
-                                                <li>Tags: <a href='shop-all-brands.html' class='text-primary'>meat organic food</a>, <a href='shop-all-brands.html' class='text-success'>beet</a>, <a href='shop-all-brands.html' class='text-success'>healthy</a>, <a href='shop-all-brands.html' class='text-success'>foody</a></li>
+                                                {{-- <li>Brand: <a href='shop-all-brands.html' class='text-success'>FarmMatket</a></li> --}}
+                                                <li>Vendor: <a href='javascript:void();' class='text-success'>{{$product->inventory->vendor}}</a></li>
+                                                <li>Category: <a href='javascript:void();' class='text-success'>{{$product->category->name}}</a>
+                                                </li>
+                                                {{-- <li>Tags: <a href='shop-all-brands.html' class='text-primary'>meat organic food</a>, <a href='shop-all-brands.html' class='text-success'>beet</a>, <a href='shop-all-brands.html' class='text-success'>healthy</a>, <a href='shop-all-brands.html' class='text-success'>foody</a></li> --}}
                                             </ul>
                                         </div>
                                         <div class="ps-product__social">
@@ -109,7 +121,10 @@
                                 <div class="extention__block">
                                     <div class="extention__item">
                                         <div class="extention__icon"><i class="icon-truck"></i></div>
-                                        <div class="extention__content"> <b class="text-black">Free Shipping </b>apply to all orders over <span class="text-success">$100</span></div>
+                                        <div class="extention__content"> <b class="text-black">
+                                            Worldwide Shipping </b>apply to all orders
+                                            {{-- <span class="text-success">$100</span> --}}
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="extention__block">
@@ -121,13 +136,13 @@
                                 <div class="extention__block">
                                     <div class="extention__item border-none">
                                         <div class="extention__icon"><i class="icon-repeat-one2"></i></div>
-                                        <div class="extention__content"> <b class="text-black">1 Day Returns </b>if you change your mind</div>
+                                        <div class="extention__content"> <b class="text-black">Applicable Returns </b>read T&C</div>
                                     </div>
                                 </div>
                                 <div class="extention__block extention__contact">
                                     <p> <span class="text-black">Hotline Order: </span>Free 7:00-21:30</p>
-                                    <h4 class="extention__phone">970978-6290</h4>
-                                    <h4 class="extention__phone">970343-8888</h4>
+                                    <h4 class="extention__phone">+234 814 632 4110</h4>
+                                    <h4 class="extention__phone">+234 803 961 5095</h4>
                                 </div>
                                 <p class="extention__footer">Become a Vendor? <a href="register.html">Register now</a></p>
                             </div>
@@ -144,7 +159,7 @@
                                 <div class="ps-product--standard"><a href="{{route('product-view')}}"><img class="ps-product__thumbnail" src="/assets/img/products/01-Fresh/01_35a.jpg" alt="alt" /></a>
                                     <div class="ps-product__content">
                                         <p class="ps-product__type"><i class="icon-store"></i>AquilaImpex</p>
-                                        <h5><a class="ps-product__name" href="#">Organic Lean Beef Steak Mince Low Fat</a></h5>
+                                        <h5><a class="ps-product__name" href="#">{{$product->name}}</a></h5>
                                         <p class="ps-product__unit">250g</p>
                                         <div class="ps-product__rating">
                                             <select class="rating-stars">

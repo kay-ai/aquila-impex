@@ -10,8 +10,8 @@
                 </div>
                 <div class="top-bar__right">
                     <ul class="nav-top">
-                        <li class="nav-top-item contact"><a class="nav-top-link" href="tel:970978-6290"> <i class="icon-telephone"></i><span>Hotline:</span><span class="text-success font-bold">970 978-6290</span></a></li>
-                        <li class="nav-top-item"><a class="nav-top-link" href="order-tracking.html">Order Tracking</a></li>
+                        <li class="nav-top-item contact"><a class="nav-top-link" href="tel:970978-6290"> <i class="icon-telephone"></i><span>Hotline:</span><span class="text-success font-bold">+234 814-632-4110</span></a></li>
+                        {{-- <li class="nav-top-item"><a class="nav-top-link" href="order-tracking.html">Order Tracking</a></li> --}}
                         <li class="nav-top-item languages"><a class="nav-top-link" href="javascript:void(0);"> <span class="current-languages">English</span><i class="icon-chevron-down"></i></a>
                             <div class="select--dropdown">
                                 <ul class="select-languages">
@@ -24,12 +24,13 @@
                         <li class="nav-top-item currency"><a class="nav-top-link" href="javascript:void(0);"> <span class="current-currency">USD</span><i class="icon-chevron-down"></i></a>
                             <div class="select--dropdown">
                                 <ul class="select-currency">
-                                    <li class="active currency-item" data-value="USD"><a href="javascript:void(0);">USD</a></li>
-                                    <li class="currency-item" data-value="VND"><a href="javascript:void(0);">VND</a></li>
+                                    <li class="active currency-item" data-value="USD"><a href="javascript:void(0);">NGN</a></li>
+                                    <li class="currency-item" data-value="VND"><a href="javascript:void(0);">USD</a></li>
                                     <li class="currency-item" data-value="EUR"><a href="javascript:void(0);">EUR</a></li>
                                 </ul>
                             </div>
                         </li>
+                        @auth
                         <li class="nav-top-item account"><a class="nav-top-link" href="javascript:void(0);"> <i class="icon-user"></i>Hi! <span class="font-bold">Jonhnathan</span></a>
                             <div class="account--dropdown">
                                 <div class="account-anchor">
@@ -57,6 +58,10 @@
                                 </div>
                             </div>
                         </li>
+                        @endauth
+                        @guest
+                        <li class="nav-top-item account"><a class="nav-top-link" href="{{route('login')}}">Login</a></li>
+                        @endguest
                     </ul>
                 </div>
             </div>
