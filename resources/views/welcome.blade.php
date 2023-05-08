@@ -13,6 +13,7 @@
                                 <div class="ps-shopnow"> <a href="{{route('shop')}}">Shop Now<i class="icon-chevron-right"></i></a></div>
                             </div>
                         </div>
+                        <a class="btn btn-primary" href="#" role="button"></a>
                     </div>
                 </div>
                 <div class="ps-banner"><img class="mobile-only" src="/assets/img/slider/home-1/slide_02_mobile.png" alt="alt" /><img class="desktop-only" src="/assets/img/slider/home-1/slide_02.png" alt="alt" />
