@@ -22,16 +22,16 @@ Route::get('/', [PagesController::class, 'index'])->name('index');
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/checkout', [PagesController::class, 'checkout'])->name('checkout');
-Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
-Route::get('/single-post', [PagesController::class, 'singlePost'])->name('blog-single');
-Route::get('/shop', [PagesController::class, 'shop'])->name('shop');
-Route::get('/shop-categories', [PagesController::class, 'shopCategories'])->name('shop-categories');
-Route::get('/shop-cart', [PagesController::class, 'shopCart'])->name('shop-cart');
-Route::get('/product-view', [PagesController::class, 'productView'])->name('product-view');
+// Route::get('/checkout', [PagesController::class, 'checkout'])->name('checkout');
+// Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
+// Route::get('/single-post', [PagesController::class, 'singlePost'])->name('blog-single');
+// Route::get('/shop', [PagesController::class, 'shop'])->name('shop');
+// Route::get('/shop-categories', [PagesController::class, 'shopCategories'])->name('shop-categories');
+// Route::get('/shop-cart', [PagesController::class, 'shopCart'])->name('shop-cart');
+// Route::get('/product-view', [PagesController::class, 'productView'])->name('product-view');
 
-Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
+// Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
 Route::post('/contactForm', [PagesController::class, 'sendMessage'])->name('contact-form');
 
-Route::resource('product', ProductController::class);
-Route::resource('category', CategoryController::class);
+// Route::resource('product', ProductController::class);
+// Route::resource('category', CategoryController::class);
