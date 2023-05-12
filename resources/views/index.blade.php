@@ -746,7 +746,7 @@
                 </div>
             </div>
         </div> --}}
-        {{-- <div class="site-section bg-white" id="gallery-section">
+        <div class="site-section bg-white" id="gallery-section">
             <div class="container">
                 <div class="row mb-5 ">
                     <div class="col-md-7 section-title text-center mx-auto">
@@ -756,74 +756,86 @@
                 </div>
                 <div id="posts" class="row no-gutter">
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_1.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/buyers-meeting" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_1.jpg">
+                            <img class="img-fluid" src="/assets/home/images/buyers-meeting.jpg">
                         </a>
                     </div>
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_2.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/bags-of-charcoal.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_2.jpg">
+                            <img class="img-fluid" src="/assets/home/images/bags-of-charcoal.jpg">
                         </a>
                     </div>
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_3.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/rice-farm.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_3.jpg">
+                            <img class="img-fluid" src="/assets/home/images/rice-farm.jpg">
                         </a>
                     </div>
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_4.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/farm-inspection.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_4.jpg">
+                            <img class="img-fluid" src="/assets/home/images/farm-inspection.jpg">
                         </a>
                     </div>
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_5.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/macfrut2023.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_5.jpg">
+                            <img class="img-fluid" src="/assets/home/images/macfrut2023.jpg">
                         </a>
                     </div>
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_6.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/investor.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_6.jpg">
+                            <img class="img-fluid" src="/assets/home/images/investor.jpg">
                         </a>
                     </div>
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_7.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/rice-production.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_7.jpg">
+                            <img class="img-fluid" src="/assets/home/images/rice-production.jpg">
                         </a>
                     </div>
                     <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_9.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/charcoal-loading2.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_9.jpg">
+                            <img class="img-fluid" src="/assets/home/images/charcoal-loading2.jpg">
                         </a>
                     </div>
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_10.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/bags-of-rice.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_10.jpg">
+                            <img class="img-fluid" src="/assets/home/images/bags-of-rice.jpg">
                         </a>
                     </div>
                     <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_11.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/rice-mill.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_11.jpg">
+                            <img class="img-fluid" src="/assets/home/images/rice-mill.jpg">
                         </a>
                     </div>
                     <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-                        <a href="images/sq_img_12.jpg" class="item-wrap" data-fancybox="gal">
+                        <a href="/assets/home/images/charcoal-loading.jpg" class="item-wrap" data-fancybox="gal">
                             <span class="icon-search2"></span>
-                            <img class="img-fluid" src="/assets/home/images/sq_img_12.jpg">
+                            <img class="img-fluid" src="/assets/home/images/charcoal-loading.jpg">
+                        </a>
+                    </div>
+                    <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="/assets/home/images/tunde-expo2023.jpg" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="/assets/home/images/tunde-expo2023.jpg">
+                        </a>
+                    </div>
+                    <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <a href="/assets/home/images/charcoal-drying.jpg" class="item-wrap" data-fancybox="gal">
+                            <span class="icon-search2"></span>
+                            <img class="img-fluid" src="/assets/home/images/charcoal-drying.jpg">
                         </a>
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
         <div class="site-section semi-transperent" id="contact-section">
             <div class="container">
                 <form action="{{route('contact-form')}}" method="POST" class="contact-form">
