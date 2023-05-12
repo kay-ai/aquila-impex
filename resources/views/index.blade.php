@@ -32,10 +32,21 @@
         .bg-white {
             background: #fff;
         }
+
+        .alert{
+            z-index: 3;
+            text-align: center;
+            border-radius: unset;
+            position: absolute;
+            width: 100%;
+        }
         @media(max-width: 500px){
             .hero-text{
                 align-self: start !important;
                 margin-top: 35px;
+            }
+            .alert{
+                position: relative;
             }
         }
     </style>
@@ -85,6 +96,19 @@
             </div>
         </div>
         <div class="site-blocks-cover semi-transperent" id="home-section">
+            @if (session()->has('success'))
+                <div class="alert text-white" role="alert" style="background: green;">
+                    <i class="fa fa-check-circle"></i>
+                    {{session('success')}}
+                </div>
+            @endif
+
+            @if (session()->has('error'))
+                <div class="alert" role="alert" style="background: red;">
+                    <i class="fa fa-times-circle"></i>
+                    {{session('error')}}
+                </div>
+            @endif
             <div class="img-wrap">
                 <div class="owl-carousel slide-one-item hero-slider">
                     <div class="slide">

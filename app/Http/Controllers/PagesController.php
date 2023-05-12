@@ -18,7 +18,7 @@ class PagesController extends Controller
             'greeting' => 'Hello '.$request->full_name,
             'body' => 'Your order has been received.',
             'name' => $request->full_name,
-            'email' => $request->full_email,
+            'email' => $request->email,
             'product' => $request->product,
             'salutation' => 'Best Regards'
         ];
@@ -27,7 +27,7 @@ class PagesController extends Controller
             'greeting' => 'Hello Admin,',
             'body' => 'A new order has been received.',
             'name' => $request->full_name,
-            'email' => $request->full_email,
+            'email' => $request->email,
             'product' => $request->product,
             'salutation' => 'Best Regards'
         ];
@@ -37,7 +37,7 @@ class PagesController extends Controller
         // Send email to yourself
         Mail::to('info@aquilla-alliedimpex.com')->send(new OrderPlaced($mail2));
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Order Placed Successfully');
     }
 
     public function index(){

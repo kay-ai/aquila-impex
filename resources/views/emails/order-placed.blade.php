@@ -1,15 +1,14 @@
 @component('mail::message')
-{{$mailData['greeting']}},
+{{$mailData['greeting']}}
 
-<br>
-{{$mailData['body']}}
+<br/>
+<p>{{$mailData['body']}}</p>
 
-<br>
-<b>Name: </b> {{$mailData['name']}}
-<b>Email: </b> {{$mailData['email']}}
-<b>Product: </b> {{$mailData['product']}}
-<br>
-<br>
+<b>Name: </b> {{$mailData['name']}}, <br/>
+<b>Email: </b> {{$mailData['email']}},<br/>
+<b>Product: </b> {{$mailData['product']}}<br/>
+<br/>
+<br/>
 
 {{$mailData['salutation']}},<br>
 The Aquilla Allied Impex Team
